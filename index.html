@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>พิพิธภัณฑ์เงินตราเสมือนจริง | Virtual Currency Museum</title>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container header-top">
+            <div class="logo">
+                <i class="fas fa-coins"></i>
+                <h1>CURRENCY MUSEUM</h1>
+            </div>
+            <div class="header-actions">
+                <button id="random-explore-btn" class="btn-secondary">
+                    <i class="fas fa-random"></i> สุ่มสำรวจเงินตรา
+                </button>
+                <button id="toggle-wallet-sidebar" class="btn-primary">
+                    <i class="fas fa-wallet"></i> กระเป๋าจำลอง (<span id="wallet-counter">0</span>)
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section container">
+        <h2>ท่องโลกแห่งเงินตราและประวัติศาสตร์</h2>
+        <p>ยินดีต้อนรับสู่พิพิธภัณฑ์เงินตราออนไลน์เสมือนจริง สำรวจรายละเอียด งานดีไซน์ประณีต วัตถุดิบ เทคโนโลยีความปลอดภัย และความเป็นมาอันล้ำค่าของธนบัตรและเหรียญกษาปณ์หลักทั่วโลก</p>
+    </section>
+
+    <!-- Main Content Area -->
+    <main class="container">
+        <!-- Search & Category Filters -->
+        <div class="controls-container">
+            <div class="search-box-wrapper">
+                <i class="fas fa-search"></i>
+                <input type="text" id="search-input" class="search-input" placeholder="ค้นหาชื่อสกุลเงิน, ประเทศ, รหัสรวดเร็ว...">
+            </div>
+            <div class="tabs-wrapper">
+                <button class="tab-btn active" data-tab="all">ทั้งหมด</button>
+                <button class="tab-btn" data-tab="asia">เอเชีย</button>
+                <button class="tab-btn" data-tab="europe">ยุโรป</button>
+                <button class="tab-btn" data-tab="americas">อเมริกา</button>
+                <button class="tab-btn" data-tab="historical">ประวัติศาสตร์</button>
+            </div>
+        </div>
+
+        <!-- Currencies Grid Gallery -->
+        <div id="currencies-grid" class="currencies-grid">
+            <!-- Dynamic Cards Loaded from JS -->
+        </div>
+
+        <!-- Converter & Mini-game Section -->
+        <div class="bottom-sections">
+            <!-- Currency Converter Box -->
+            <div class="app-box">
+                <h3><i class="fas fa-calculator"></i> เครื่องคำนวณและแปลงเงินตรา</h3>
+                <p class="sub-heading">คำนวณเปรียบเทียบมูลค่าสกุลเงินต่าง ๆ อิงตามอัตราแลกเปลี่ยนเบื้องต้น</p>
+                <div class="converter-grid">
+                    <div class="convert-input-row">
+                        <input type="number" id="convert-amount" class="convert-field" value="1" placeholder="จำนวนเงิน">
+                        <select id="convert-from" class="convert-field">
+                            <!-- Options via JS -->
+                        </select>
+                    </div>
+                    <div style="text-align: center; color: var(--primary-gold); font-size: 1.2rem;">
+                        <i class="fas fa-exchange-alt fa-rotate-90"></i>
+                    </div>
+                    <div class="convert-input-row">
+                        <div class="convert-field" style="background: rgba(10, 12, 16, 0.4); display: flex; align-items: center; border-color: rgba(255, 255, 255, 0.05);" id="converted-display-mock-disabled">
+                            <span style="color: var(--text-gray); font-size: 0.95rem;">เทียบเท่ากับ</span>
+                        </div>
+                        <select id="convert-to" class="convert-field">
+                            <!-- Options via JS -->
+                        </select>
+                    </div>
+                    <div class="convert-result-box" id="convert-result">
+                        <div id="convert-result-val" class="result-number">-</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quiz Game Box -->
+            <div class="app-box">
+                <h3><i class="fas fa-gamepad"></i> เกมตอบคำถามสกุลเงิน</h3>
+                <p class="sub-heading">ทดสอบความรู้รอบตัวของคุณเกี่ยวกับสกุลเงิน ประเทศ และเกร็ดประวัติต่าง ๆ</p>
+                <div class="quiz-container">
+                    <div class="quiz-score-board">
+                        <span>คะแนนสะสมของคุณ:</span>
+                        <span><span id="quiz-score-val" class="score-val">0</span> คะแนน</span>
+                    </div>
+                    <div class="quiz-question-box" id="quiz-question">
+                        <!-- Loaded dynamically -->
+                        กำลังโหลดคำถาม...
+                    </div>
+                    <div class="quiz-options-grid" id="quiz-options">
+                        <!-- Loaded dynamically -->
+                    </div>
+                    <div class="quiz-feedback-box" id="quiz-feedback">
+                        <!-- Feedback text shows here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>© 2026 Virtual Currency Museum. สงวนลิขสิทธิ์ จัดทำขึ้นเพื่อการศึกษาและการเรียนรู้</p>
+            <p>ออกแบบอย่างประณีตด้วยแนวคิด Dark Luxury & Interactive Design</p>
+        </div>
+    </footer>
+
+    <!-- Currency Detail Modal -->
+    <div id="detail-modal" class="modal">
+        <div class="modal-content">
+            <button class="close-modal"><i class="fas fa-times"></i></button>
+            <div id="detail-modal-body">
+                <!-- Content Loaded from JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox Zoom Modal (Clicking on images to enlarge and zoom) -->
+    <div id="lightbox-modal" class="modal">
+        <div class="modal-content">
+            <button class="close-modal"><i class="fas fa-times"></i></button>
+            <div class="lightbox-image-wrapper">
+                <img id="lightbox-img" src="" alt="ขยายรูปภาพ">
+            </div>
+            <div class="lightbox-controls">
+                <button id="zoom-out-btn" class="lightbox-btn" title="ซูมออก"><i class="fas fa-search-minus"></i></button>
+                <button id="zoom-reset-btn" class="lightbox-btn" title="รีเซ็ตซูม"><i class="fas fa-redo-alt"></i></button>
+                <button id="zoom-in-btn" class="lightbox-btn" title="ซูมเข้า"><i class="fas fa-search-plus"></i></button>
+            </div>
+            <h4 id="lightbox-title">ขยายรูปภาพ</h4>
+        </div>
+    </div>
+
+    <!-- Virtual Wallet Sidebar -->
+    <div id="wallet-sidebar" class="wallet-sidebar">
+        <div class="wallet-sidebar-header">
+            <h3><i class="fas fa-bookmark"></i> รายการสะสมส่วนตัว</h3>
+            <button id="close-wallet-sidebar" class="close-sidebar-btn"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="wallet-sidebar-body" id="wallet-items-container">
+            <!-- Dynamic wallet items loaded from JS -->
+        </div>
+    </div>
+
+    <!-- Custom Script -->
+    <script src="app.js"></script>
+</body>
+</html>
