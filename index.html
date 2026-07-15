@@ -48,6 +48,8 @@
                 <button class="tab-btn" data-tab="asia">เอเชีย</button>
                 <button class="tab-btn" data-tab="europe">ยุโรป</button>
                 <button class="tab-btn" data-tab="americas">อเมริกา</button>
+                <button class="tab-btn" data-tab="africa">แอฟริกา</button>
+                <button class="tab-btn" data-tab="oceania">โอเชียเนีย</button>
                 <button class="tab-btn" data-tab="historical">ประวัติศาสตร์</button>
             </div>
         </div>
@@ -63,6 +65,14 @@
             <div class="app-box">
                 <h3><i class="fas fa-calculator"></i> เครื่องคำนวณและแปลงเงินตรา</h3>
                 <p class="sub-heading">คำนวณเปรียบเทียบมูลค่าสกุลเงินต่าง ๆ อิงตามอัตราแลกเปลี่ยนเบื้องต้น</p>
+                <div class="api-status-wrapper">
+                    <span id="api-status" class="api-status">
+                        <i class="fas fa-sync fa-spin"></i> กำลังโหลดอัตราแลกเปลี่ยนปัจจุบัน...
+                    </span>
+                    <button id="refresh-rates-btn" class="btn-refresh" title="อัปเดตอัตราแลกเปลี่ยน">
+                        <i class="fas fa-sync-alt"></i>
+                    </button>
+                </div>
                 <div class="converter-grid">
                     <div class="convert-input-row">
                         <input type="number" id="convert-amount" class="convert-field" value="1" placeholder="จำนวนเงิน">

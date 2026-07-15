@@ -1086,6 +1086,70 @@ footer a:hover {
     color: var(--border-glass);
 }
 
+/* Real-time API Status styling */
+.api-status-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--border-glass);
+    border-radius: 8px;
+    padding: 0.6rem 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.85rem;
+    transition: var(--transition-smooth);
+}
+
+.api-status-wrapper:hover {
+    border-color: var(--border-glass-hover);
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.api-status {
+    color: var(--text-gray);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.api-status i {
+    font-size: 0.9rem;
+}
+
+.api-status.success {
+    color: var(--color-correct);
+    font-weight: 500;
+}
+
+.api-status.error {
+    color: var(--color-incorrect);
+}
+
+.btn-refresh {
+    background: transparent;
+    border: none;
+    color: var(--primary-gold);
+    cursor: pointer;
+    transition: var(--transition-smooth);
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-refresh:hover {
+    color: var(--primary-gold-hover);
+    background: rgba(212, 175, 55, 0.1);
+    transform: rotate(180deg);
+}
+
+.btn-refresh:disabled {
+    color: var(--text-gray);
+    cursor: not-allowed;
+    background: transparent;
+}
+
 /* Media Queries (Responsive Design) */
 @media (max-width: 1024px) {
     .bottom-sections {

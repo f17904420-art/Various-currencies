@@ -112,12 +112,172 @@ const currencyDatabase = [
         history: "เดนาริอุสคือเหรียญเงินที่เป็นรากฐานระบบเศรษฐกิจและการค้าระดับโลกของจักรวรรดิโรมันโบราณ เริ่มผลิตครั้งแรกในช่วงสงครามพิวนิกครั้งที่สอง (Second Punic War) โดยค่าของมันลดลงเรื่อย ๆ ตามกาลเวลาเนื่องจากจักรพรรดิหลายพระองค์ทรงลดสัดส่วนของเงินแท้ลง (Debasement) เพื่อนำเงินไปใช้จ่ายในสงครามและกองทัพ จนนำไปสู่วิกฤตเงินเฟ้อรุนแรงและเลิกใช้ไปในที่สุด",
         trivia: "คำว่า 'เดนาริอุส' (Denarius) เป็นต้นกำเนิดของคำว่าเงินในหลายภาษาปัจจุบัน เช่น 'Dinar' ในตะวันออกกลาง และคำว่า 'Dinero' ในภาษาสเปน",
         material: "เหรียญ: เงินแท้ (สัดส่วนลดหลั่นจาก 95% ลงเหลือไม่ถึง 5% ในปลายยุค)",
-        exchangeRate: 0.33, // 1 Denarius roughly equivalent to mock value of $3.00 USD (i.e. 0.33 Denarius = 1 USD)
+        exchangeRate: 0.33,
         image: "images/roman_denarius.png",
         securityFeatures: [
             "ขอบของเหรียญที่ถูกตอกนูนแบบดั้งเดิม (Strike marks) เพื่อป้องกันการเจียรขอบเงินไปขาย",
             "ตราประทับของจักรพรรดิอย่างเป็นทางการ (Imperator Portrait) บนเนื้อเหรียญซึ่งลอกเลียนแบบได้ยากในยุคโบราณ",
             "คุณภาพและน้ำหนักของโลหะเงินแท้ที่ใช้ในการตรวจสอบผ่านการฟังเสียงกระทบโลหะ"
+        ]
+    },
+    {
+        id: "gbp",
+        name: "ปอนด์สเตอร์ลิง",
+        englishName: "British Pound Sterling",
+        code: "GBP",
+        country: "สหราชอาณาจักร (United Kingdom)",
+        continent: "europe",
+        productionYear: "พ.ศ. 2237 (ค.ศ. 1694) - ปัจจุบัน",
+        activeYears: "320+ ปี",
+        history: "ปอนด์สเตอร์ลิงเป็นสกุลเงินที่เก่าแก่ที่สุดในโลกที่ยังคงใช้งานอยู่จนถึงปัจจุบัน ต้นกำเนิดย้อนกลับไปในยุคแองโกล-แซกซอน ธนาคารแห่งอังกฤษ (Bank of England) เริ่มออกธนบัตรครั้งแรกในปี ค.ศ. 1694 สัญลักษณ์ £ มาจากตัวอักษร L ในภาษาละติน 'Libra' หมายถึงน้ำหนักปอนด์",
+        trivia: "ธนบัตรปอนด์สเตอร์ลิงรุ่นปัจจุบันที่ทำจากพอลิเมอร์มีรูปสมเด็จพระเจ้าชาร์ลส์ที่ 3 เป็นพระมหากษัตริย์พระองค์ที่สองต่อจากสมเด็จพระราชินีนาถเอลิซาเบธที่ 2 ที่ได้ประทับบนธนบัตรของธนาคารแห่งอังกฤษ",
+        material: "ธนบัตร: พอลิเมอร์ (โพลีโพรพีลีน) / เหรียญ: คิวโปรนิกเกิล, นิกเกิล-ทองเหลือง, เหล็กชุบทองแดง",
+        exchangeRate: 0.77,
+        image: "images/gbp_currency.png",
+        securityFeatures: [
+            "หน้าต่างโปร่งใสสองบาน (Double transparent windows) ป้องกันการปลอมแปลงแบบดิจิทัล",
+            "ภาพโฮโลแกรมเปลี่ยนสีได้ (Hologram details) เปลี่ยนระหว่างรูปมงกุฎและตัวเลขมูลค่าเงินเมื่อเอียงธนบัตร",
+            "การพิมพ์นูนแบบสัมผัสได้ (Tactile feature) มีจุดปุ่มนูนสำหรับผู้พิการทางสายตา"
+        ]
+    },
+    {
+        id: "aud",
+        name: "ดอลลาร์ออสเตรเลีย",
+        englishName: "Australian Dollar",
+        code: "AUD",
+        country: "ประเทศออสเตรเลีย (Australia)",
+        continent: "oceania",
+        productionYear: "ค.ศ. 1966 - ปัจจุบัน",
+        activeYears: "60+ ปี",
+        history: "ดอลลาร์ออสเตรเลียถูกนำมาใช้ในปี ค.ศ. 1966 แทนที่ปอนด์ออสเตรเลียเดิมตามการเปลี่ยนผ่านเข้าสู่ระบบทศนิยม ออสเตรเลียเป็นประเทศแรกในโลกที่พัฒนาและริเริ่มใช้ธนบัตรพอลิเมอร์ (พลาสติก) ในปี ค.ศ. 1988 เพื่อเพิ่มความทนทานและเพิ่มความยากในการปลอมแปลง",
+        trivia: "ธนบัตรดอลลาร์ออสเตรเลียทำจากพอลิเมอร์เกรดสูง ทำให้ทนทานต่อการซักเครื่องซักผ้า และไม่ฉีกขาดง่ายเมื่อเทียบกับธนบัตรกระดาษทั่วไป",
+        material: "ธนบัตร: พอลิเมอร์ (Biaxially Oriented Polypropylene) / เหรียญ: คิวโปรนิกเกิล, อะลูมิเนียมบรอนซ์",
+        exchangeRate: 1.48,
+        image: "images/aud_currency.png",
+        securityFeatures: [
+            "แถบใสจากบนลงล่าง (Top-to-bottom clear window) พร้อมภาพโฮโลแกรม 3 มิติเคลื่อนไหวภายในหน้าต่าง",
+            "นกบินขยับปีก (Flying bird feature) ภาพนกในแถบโฮโลแกรมจะขยับปีกเมื่อเอียงธนบัตร",
+            "ตัวเลขเรืองแสงภายใต้แสง UV (Fluorescent serial number) ปรากฏเด่นชัดเมื่อส่องไฟแบล็กไลต์"
+        ]
+    },
+    {
+        id: "cad",
+        name: "ดอลลาร์แคนาดา",
+        englishName: "Canadian Dollar",
+        code: "CAD",
+        country: "ประเทศแคนาดา (Canada)",
+        continent: "americas",
+        productionYear: "ค.ศ. 1858 - ปัจจุบัน",
+        activeYears: "160+ ปี",
+        history: "เดิมทีแต่ละมณฑลในแคนาดาออกเงินของตนเอง ต่อมาในรัฐบัญญัติปี ค.ศ. 1858 แคนาดาได้ประกาศใช้เงินดอลลาร์เป็นสกุลเงินทางการอิงกับระบบทศนิยมและค่าของดอลลาร์สหรัฐ แคนาดาได้เปลี่ยนมาใช้ธนบัตรพอลิเมอร์ซีรีส์ 'Frontier' ตั้งแต่ปี ค.ศ. 2011",
+        trivia: "คนมักเรียกเหรียญ 1 ดอลลาร์แคนาดาว่า 'Loonie' เนื่องจากมีรูปนกโลน (Loon) ซึ่งเป็นนกน้ำประจำชาติอยู่ด้านหลัง และเหรียญ 2 ดอลลาร์ว่า 'Toonie'",
+        material: "ธนบัตร: พอลิเมอร์สังเคราะห์ / เหรียญ: เหล็กชุบนิกเกิล, เหล็กชุบทองเหลือง",
+        exchangeRate: 1.36,
+        image: "images/cad_currency.png",
+        securityFeatures: [
+            "หน้าต่างโปร่งแสงขนาดใหญ่ (Large transparent window) ซึ่งบรรจุภาพเหมือนโฮโลแกรมสีเมทัลลิกของอาคารรัฐสภาและบุคคลสำคัญ",
+            "หมึกพิมพ์นูนหนา (Raised ink) บริเวณคำว่า 'Bank of Canada' และตัวเลขบอกราคา",
+            "ตัวเลขซ่อนเร้น (Hidden numbers) ภายในรูปใบเมเปิ้ลโปร่งใสเล็ก ๆ มองเห็นเมื่อส่องกับไฟดวงเล็ก"
+        ]
+    },
+    {
+        id: "cny",
+        name: "หยวนจีน (เหรินหมินปี้)",
+        englishName: "Chinese Yuan Renminbi",
+        code: "CNY",
+        country: "ประเทศจีน (China)",
+        continent: "asia",
+        productionYear: "ค.ศ. 1948 - ปัจจุบัน",
+        activeYears: "75+ ปี",
+        history: "ธนาคารประชาชนจีนประกาศออกเงิน 'เหรินหมินปี้' (แปลว่า เงินตราของประชาชน) ครั้งแรกในเดือนธันวาคม ค.ศ. 1948 ก่อนการสถาปนาสาธารณรัฐประชาชนจีนเพียงเล็กน้อย สกุลเงินหยวนมีการปรับปรุงการออกแบบและระบบความปลอดภัยมาแล้วถึง 5 ซีรีส์หลัก",
+        trivia: "แม้จะเรียกสกุลเงินอย่างเป็นทางการว่า เหรินหมินปี้ (RMB) แต่หน่วยนับพื้นฐานจะเรียกว่า 'หยวน' (Yuan) และในภาษาพูดประจำวันมักเรียกเงินนี้ว่า 'ไคว่' (Kuai)",
+        material: "ธนบัตร: กระดาษผ้าฝ้ายคุณภาพสูงพิเศษ / เหรียญ: เหล็กชุบนิกเกิล, เหล็กชุบทองเหลือง, อะลูมิเนียมผสม",
+        exchangeRate: 7.25,
+        image: "images/cny_currency.png",
+        securityFeatures: [
+            "ลายน้ำรูปเหมา เจ๋อตง (Mao Zedong Watermark) และลายน้ำสามมิติรูปดอกบัวเมื่อส่องไฟ",
+            "หมายเลขมูลค่าเปลี่ยนสีได้ (Color-shifting value number) หมายเลข 100 จะสลับระหว่างสีทองและเขียว",
+            "เส้นใยความปลอดภัยประกายสีแดงและน้ำเงิน (Security fibers) ฝังในเนื้อกระดาษเรืองแสงภายใต้ไฟ UV"
+        ]
+    },
+    {
+        id: "sgd",
+        name: "ดอลลาร์สิงคโปร์",
+        englishName: "Singapore Dollar",
+        code: "SGD",
+        country: "ประเทศสิงคโปร์ (Singapore)",
+        continent: "asia",
+        productionYear: "ค.ศ. 1967 - ปัจจุบัน",
+        activeYears: "55+ ปี",
+        history: "หลังจากสิงคโปร์แยกตัวออกจากสหพันธรัฐมาเลเซียในปี ค.ศ. 1965 สิงคโปร์ได้จัดตั้งคณะกรรมาธิการเงินตราและออกสกุลเงินของตัวเองในวันที่ 7 มิถุนายน ค.ศ. 1967 เดิมทีสามารถใช้แลกเปลี่ยนและชำระหนี้ร่วมกับเงินดอลลาร์บรูไนได้ตามข้อตกลงแลกเปลี่ยนเงินตรา",
+        trivia: "ธนบัตรชุด 'Portrait Series' ที่ใช้ในปัจจุบันแสดงรูปภาพของ ยูซอฟ บิน อิสฮัก (Yusof bin Ishak) ประธานาธิบดีคนแรกของสิงคโปร์ ด้านหลังแสดงธีมความก้าวหน้าและการศึกษาของประเทศ",
+        material: "ธนบัตร: พอลิเมอร์ (ตั้งแต่ปี ค.ศ. 2004) และบางรุ่นเป็นกระดาษ / เหรียญ: เหล็กชุบหลายชั้น (นิกเกิล, ทองเหลือง, ทองแดง)",
+        exchangeRate: 1.34,
+        image: "images/sgd_currency.png",
+        securityFeatures: [
+            "หน้าต่างใสทรงไข่ (Clear oval window) แสดงรูปเหมือนของยูซอฟ บิน อิสฮัก และมีเอฟเฟกต์สีรุ้งสะท้อน",
+            "ตราสัญลักษณ์ประจำชาติโฮโลแกรม (Holographic state crest) มีความแวววาวและเปลี่ยนสีตามทิศทางแสง",
+            "อักษรจิ๋วมาก (Micro-text) คำว่า 'MAS' และมูลค่าธนบัตรพิมพ์ซ่อนอยู่บริเวณรอบข้างของรูปหน้าหลัก"
+        ]
+    },
+    {
+        id: "inr",
+        name: "รูปีอินเดีย",
+        englishName: "Indian Rupee",
+        code: "INR",
+        country: "ประเทศอินเดีย (India)",
+        continent: "asia",
+        productionYear: "ค.ศ. 1540 (ยุคเชอร์ ชาห์ ซูรี) / ระบบยุคใหม่ ค.ศ. 1947",
+        activeYears: "480+ ปี (ประวัติศาสตร์รวม)",
+        history: "คำว่ารูปีมาจากภาษาภาษิต 'รุปยะ' แปลว่าเงินบริสุทธิ์หรือเหรียญเงิน เริ่มผลิตและใช้งานโดยผู้ปกครองเชอร์ ชาห์ ซูรี ในศตวรรษที่ 16 ต่อมารัฐบาลอินเดียยุคหลังได้รับเอกราชได้สถาปนารูปีเป็นเงินตราหลัก และมีการยกเลิกธนบัตรใบเก่า (Demonetization) ในปี ค.ศ. 2016 เพื่อปราบปรามคอร์รัปชัน",
+        trivia: "สัญลักษณ์รูปีอินเดีย ₹ ได้รับการออกแบบใหม่ในปี ค.ศ. 2010 โดยผสมผสานระหว่างตัวอักษรเทวนาครี 'र' (Ra) และตัวอักษรโรมัน 'R' เข้าด้วยกัน",
+        material: "ธนบัตร: กระดาษผ้าฝ้ายและใยลินินทนทานสูง / เหรียญ: สเตนเลสสตีลเฟอร์ริติก, สหโลหะทองเหลือง",
+        exchangeRate: 83.50,
+        image: "images/inr_currency.png",
+        securityFeatures: [
+            "แถบความปลอดภัยหน้าต่างคู่ (Windowed security thread) สลับสีเขียวเป็นน้ำเงินเมื่อเอียงและพิมพ์ตัวอักษร 'भारत' (Bharat)",
+            "รูปเหมือนมหาตมา คานธี ลายน้ำเงา (Mahatma Gandhi Watermark) แสดงควบคู่กับลายน้ำแนวตั้งบอกมูลค่าเงิน",
+            "สัญลักษณ์ระบุจุดนูนสำหรับผู้พิการทางสายตา (Raised identification mark) รูปทรงเรขาคณิตเฉพาะในแต่ละรุ่นธนบัตร"
+        ]
+    },
+    {
+        id: "zar",
+        name: "แรนด์แอฟริกาใต้",
+        englishName: "South African Rand",
+        code: "ZAR",
+        country: "ประเทศแอฟริกาใต้ (South Africa)",
+        continent: "africa",
+        productionYear: "ค.ศ. 1961 - ปัจจุบัน",
+        activeYears: "65+ ปี",
+        history: "แรนด์แอฟริกาใต้เปิดตัวในปี ค.ศ. 1961 พร้อมกับการจัดตั้งสาธารณรัฐแอฟริกาใต้แทนที่ปอนด์แอฟริกาใต้ในระบบทศนิยม คำว่า 'Rand' มาจากแนวเขา 'Witwatersrand' (วิทวอเตอร์สแรนด์) ซึ่งเป็นแหล่งขุดทองที่ใหญ่ที่สุดแห่งหนึ่งของโลกในเขตโยฮันเนสเบิร์ก",
+        trivia: "ธนบัตรแอฟริกาใต้รุ่นปัจจุบันได้รับการยกย่องว่าสวยงามที่สุดชุดหนึ่งเนื่องจากพิมพ์ภาพสัตว์ป่าผู้ยิ่งใหญ่ทั้งห้า (Big Five) ได้แก่ สิงโต, เสือดาว, แรด, ช้าง และควายป่า ควบคู่ไปกับรูปเนลสัน แมนเดลา",
+        material: "ธนบัตร: กระดาษใยฝ้ายคุณภาพสูง / เหรียญ: เหล็กชุบทองแดง, เหล็กชุบนิกเกิล, สองสีนิกเกิล-ทองเหลือง",
+        exchangeRate: 18.20,
+        image: "images/zar_currency.png",
+        securityFeatures: [
+            "แถบโฮโลแกรมประกายไฟ (Hologram security band) แสดงสัญลักษณ์สัตว์ป่าหมุนเวียนและตัวเลขราคาเมื่อปรับมุมมอง",
+            "ลายน้ำใบหน้าเนลสัน แมนเดลา (Nelson Mandela Watermark) เห็นเด่นชัดและโปร่งแสงเป็นธรรมชาติ",
+            "หมึกสีกำมะหยี่เปลี่ยนสีได้ (Color-shifting ink) รูปสัตว์ป่าด้านขวาของธนบัตรจะเปลี่ยนเฉดสีเมื่อเอียง"
+        ]
+    },
+    {
+        id: "brl",
+        name: "เรียลบราซิล",
+        englishName: "Brazilian Real",
+        code: "BRL",
+        country: "ประเทศบราซิล (Brazil)",
+        continent: "americas",
+        productionYear: "ค.ศ. 1994 - ปัจจุบัน",
+        activeYears: "30+ ปี (ระบบยุคใหม่)",
+        history: "เรียลบราซิลถือกำเนิดขึ้นภายใต้แผนเศรษฐกิจ 'Plano Real' ในปี ค.ศ. 1994 เพื่อควบคุมภาวะเงินเฟ้อขั้นรุนแรง (Hyperinflation) ที่ยืดเยื้อมานานหลายทศวรรษในบราซิล ถือเป็นหนึ่งในมาตรการทางการเงินที่ประสบความสำเร็จมากที่สุดในการสร้างเสถียรภาพทางเศรษฐกิจในละตินอเมริกา",
+        trivia: "ธนบัตรบราซิลรุ่นปัจจุบันมีชื่อเรียกว่าซีรีส์ที่สอง (Second Series) ออกแบบให้มีความยาวของธนบัตรที่แตกต่างกันตามมูลค่า (ยิ่งมูลค่าสูงธนบัตรยิ่งยาว) เพื่อป้องกันการนำธนบัตรราคาต่ำมาฟอกสีเพื่อพิมพ์ใหม่ในราคาสูง",
+        material: "ธนบัตร: กระดาษผ้าฝ้ายผสมใยเซลลูโลสหนา / เหรียญ: เหล็กชุบทองแดง, สเตนเลสสตีล, ทองสัมฤทธิ์",
+        exchangeRate: 5.40,
+        image: "images/brl_currency.png",
+        securityFeatures: [
+            "ลายน้ำรูปปั้นเทพีแห่งเสรีภาพสาธารณรัฐ (Effigy of Republic Watermark) ปรากฏเด่นชัดเมื่อส่องแสงไฟ",
+            "ตัวเลขหลากสีปริซึมซ่อนเร้น (Hidden puzzle number) ตัวเลขมูลค่าที่แบ่งครึ่งพิมพ์สองด้านจะประกบตรงกันพอดีเป็นภาพเดียวเมื่อส่องไฟ",
+            "แถบพิมพ์ฟอยล์แนวตั้งลวดลายสามมิติ (3D Holographic Foil stripe) สีเงินวาวแสดงรูปสัตว์ป่าของบราซิล"
         ]
     }
 ];
@@ -129,16 +289,133 @@ let searchQuery = "";
 let currentQuizQuestion = null;
 let score = 0;
 
+// API Caching configuration
+const CACHE_KEY = "currency_rates_cache";
+const CACHE_DURATION = 3600000; // 1 ชั่วโมงในหน่วยมิลลิวินาที
+
+// Fetch real-time exchange rates
+async function fetchRealTimeRates(forceRefresh = false) {
+    const statusEl = document.getElementById("api-status");
+    const refreshBtn = document.getElementById("refresh-rates-btn");
+    
+    if (statusEl) {
+        statusEl.className = "api-status";
+        statusEl.innerHTML = `<i class="fas fa-sync fa-spin"></i> กำลังอัปเดตอัตราแลกเปลี่ยน...`;
+    }
+    if (refreshBtn) {
+        refreshBtn.disabled = true;
+        const icon = refreshBtn.querySelector("i");
+        if (icon) icon.className = "fas fa-sync fa-spin";
+    }
+
+    try {
+        // 1. ตรวจสอบแคชก่อน เว้นแต่จะเป็นการกด Refresh บังคับ
+        if (!forceRefresh) {
+            const cachedData = localStorage.getItem(CACHE_KEY);
+            if (cachedData) {
+                const parsed = JSON.parse(cachedData);
+                const now = Date.now();
+                if (now - parsed.timestamp < CACHE_DURATION) {
+                    applyRatesToDatabase(parsed.rates);
+                    updateAPIStatusUI(true, parsed.timestamp);
+                    if (refreshBtn) {
+                        const icon = refreshBtn.querySelector("i");
+                        if (icon) icon.className = "fas fa-sync-alt";
+                        refreshBtn.disabled = false;
+                    }
+                    return;
+                }
+            }
+        }
+
+        // 2. ดึงข้อมูลจาก API จริง
+        const response = await fetch("https://open.er-api.com/v6/latest/USD");
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const data = await response.json();
+        
+        if (data.result === "success" && data.rates) {
+            const cachePayload = {
+                timestamp: Date.now(),
+                rates: data.rates
+            };
+            localStorage.setItem(CACHE_KEY, JSON.stringify(cachePayload));
+            
+            applyRatesToDatabase(data.rates);
+            updateAPIStatusUI(true, cachePayload.timestamp);
+            showToast("อัปเดตอัตราแลกเปลี่ยนเรียลไทม์สำเร็จ!");
+        } else {
+            throw new Error("โครงสร้างข้อมูล API ไม่ถูกต้อง");
+        }
+    } catch (error) {
+        console.error("Failed to fetch exchange rates:", error);
+        // Fallback: ใช้แคชเก่าที่หมดอายุไปแล้ว
+        const cachedData = localStorage.getItem(CACHE_KEY);
+        if (cachedData) {
+            const parsed = JSON.parse(cachedData);
+            applyRatesToDatabase(parsed.rates);
+            updateAPIStatusUI(true, parsed.timestamp, true); // true คือระบุว่าใช้แคชแทนอัปเดตล้มเหลว
+            showToast("เชื่อมต่อ API ล้มเหลว: กำลังใช้อัตราแลกเปลี่ยนล่าสุดจากแคช");
+        } else {
+            updateAPIStatusUI(false);
+            showToast("เชื่อมต่อ API ล้มเหลว: กำลังใช้อัตราแลกเปลี่ยนสำรองจากฐานข้อมูล");
+        }
+    } finally {
+        if (refreshBtn) {
+            refreshBtn.disabled = false;
+            const icon = refreshBtn.querySelector("i");
+            if (icon) icon.className = "fas fa-sync-alt";
+        }
+    }
+}
+
+function applyRatesToDatabase(rates) {
+    currencyDatabase.forEach(c => {
+        // ข้ามสกุลเงินประวัติศาสตร์ และข้ามการแปลง USD เป็นตัวมันเอง (ซึ่งเท่ากับ 1.0 เสมอ)
+        if (c.id === "roman" || c.code === "USD") {
+            return;
+        }
+        if (rates[c.code]) {
+            c.exchangeRate = rates[c.code];
+        }
+    });
+}
+
+function updateAPIStatusUI(isSuccess, timestamp = null, isFallback = false) {
+    const statusEl = document.getElementById("api-status");
+    if (!statusEl) return;
+    
+    if (isSuccess && timestamp) {
+        const date = new Date(timestamp);
+        const timeString = date.toLocaleTimeString("th-TH", { hour: "2-digit", minute: "2-digit" });
+        if (isFallback) {
+            statusEl.className = "api-status success";
+            statusEl.innerHTML = `<i class="fas fa-history"></i> ล่าสุดในระบบแคชเมื่อ ${timeString} น. (ออฟไลน์)`;
+        } else {
+            statusEl.className = "api-status success";
+            statusEl.innerHTML = `<i class="fas fa-check-circle"></i> เรียลไทม์ (อัปเดตเมื่อ ${timeString} น.)`;
+        }
+    } else {
+        statusEl.className = "api-status error";
+        statusEl.innerHTML = `<i class="fas fa-exclamation-triangle"></i> ออฟไลน์ (กำลังใช้อัตราแลกเปลี่ยนสำรอง)`;
+    }
+}
+
 // DOM Elements
 document.addEventListener("DOMContentLoaded", () => {
     initApp();
 });
 
-function initApp() {
-    renderCurrencies();
+async function initApp() {
     setupEventListeners();
-    setupConverter();
     updateWalletSidebar();
+    
+    // โหลดข้อมูลอัตราแลกเปลี่ยนเรียลไทม์ก่อนการแสดงผล
+    await fetchRealTimeRates();
+    
+    renderCurrencies();
+    setupConverter();
     loadRandomQuiz();
 }
 
@@ -304,6 +581,20 @@ function setupEventListeners() {
             showDetailModal(randomCurr.id);
         });
     }
+
+    // Refresh API Rates button
+    const refreshBtn = document.getElementById("refresh-rates-btn");
+    if (refreshBtn) {
+        refreshBtn.addEventListener("click", async () => {
+            await fetchRealTimeRates(true);
+            renderCurrencies();
+            setupConverter();
+            const fromSelect = document.getElementById("convert-from");
+            if (fromSelect) {
+                fromSelect.dispatchEvent(new Event("change"));
+            }
+        });
+    }
 }
 
 // Show currency detail modal
@@ -350,7 +641,7 @@ function showDetailModal(id) {
                     </div>
                     <div>
                         <strong><i class="fas fa-coins"></i> อัตราแลกเปลี่ยน:</strong>
-                        <span>1 USD = ${curr.exchangeRate} ${curr.code}</span>
+                        <span>1 USD = ${curr.exchangeRate.toLocaleString("th-TH", { maximumFractionDigits: 4 })} ${curr.code} ${curr.id === 'roman' ? '(อัตราจำลองประวัติศาสตร์)' : (curr.code === 'USD' ? '(สกุลเงินอ้างอิง)' : '(อัปเดตเรียลไทม์)')}</span>
                     </div>
                     <div>
                         <strong><i class="fas fa-lightbulb"></i> เกร็ดความรู้ (Trivia):</strong>
@@ -445,17 +736,36 @@ function updateWalletSidebar() {
     });
 }
 
-// Setup Converter Calculator
-function setupConverter() {
+// Populate Converter Dropdowns
+function populateConverterSelects() {
     const fromSelect = document.getElementById("convert-from");
     const toSelect = document.getElementById("convert-to");
-    const amountInput = document.getElementById("convert-amount");
-    const resultDiv = document.getElementById("convert-result-val");
+    if (!fromSelect || !toSelect) return;
 
-    if (!fromSelect || !toSelect || !amountInput || !resultDiv) return;
+    // Save previous selections
+    const prevFromValue = fromSelect.value;
+    const prevToValue = toSelect.value;
 
-    // Populate selects
+    // Clear selects
+    fromSelect.innerHTML = "";
+    toSelect.innerHTML = "";
+
+    // Add USD option first since rates are relative to USD
+    const optUSDFrom = document.createElement("option");
+    optUSDFrom.value = "USD";
+    optUSDFrom.innerText = "ดอลลาร์สหรัฐ (USD)";
+    fromSelect.appendChild(optUSDFrom);
+
+    const optUSDTo = document.createElement("option");
+    optUSDTo.value = "USD";
+    optUSDTo.innerText = "ดอลลาร์สหรัฐ (USD)";
+    toSelect.appendChild(optUSDTo);
+
+    // Populate from database
     currencyDatabase.forEach(c => {
+        // Skip USD if it was already added to prevent duplicates
+        if (c.code === "USD") return;
+        
         const optFrom = document.createElement("option");
         optFrom.value = c.code;
         optFrom.innerText = `${c.name} (${c.code})`;
@@ -467,19 +777,31 @@ function setupConverter() {
         toSelect.appendChild(optTo);
     });
 
-    // Add USD option since rate is based on USD
-    const optUSDFrom = document.createElement("option");
-    optUSDFrom.value = "USD";
-    optUSDFrom.innerText = "ดอลลาร์สหรัฐ (USD)";
-    optUSDFrom.selected = true;
-    fromSelect.prepend(optUSDFrom);
+    // Restore selections
+    if (prevFromValue) fromSelect.value = prevFromValue;
+    if (prevToValue) toSelect.value = prevToValue;
+}
 
-    const optUSDTo = document.createElement("option");
-    optUSDTo.value = "USD";
-    optUSDTo.innerText = "ดอลลาร์สหรัฐ (USD)";
-    toSelect.prepend(optUSDTo);
+let converterInitialized = false;
 
-    // Set default value for To select
+// Setup Converter Calculator
+function setupConverter() {
+    const fromSelect = document.getElementById("convert-from");
+    const toSelect = document.getElementById("convert-to");
+    const amountInput = document.getElementById("convert-amount");
+    const resultDiv = document.getElementById("convert-result-val");
+
+    if (!fromSelect || !toSelect || !amountInput || !resultDiv) return;
+
+    // Populate selects
+    populateConverterSelects();
+
+    // Prevent duplicate event listeners
+    if (converterInitialized) {
+        return;
+    }
+
+    // Set default value for To select on first run
     toSelect.value = "THB";
 
     // Convert Event Listeners
@@ -516,6 +838,11 @@ function setupConverter() {
     amountInput.addEventListener("input", triggerConvert);
     fromSelect.addEventListener("change", triggerConvert);
     toSelect.addEventListener("change", triggerConvert);
+    
+    // Run initial conversion
+    triggerConvert();
+    
+    converterInitialized = true;
 }
 
 // Mini Game - Quiz Engine
